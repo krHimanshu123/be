@@ -58,6 +58,7 @@ public class ProductController {
             return ResponseEntity.ok("Product uploaded successfully!");
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to upload product image");
+            
         }
     }
 
