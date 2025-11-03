@@ -18,6 +18,7 @@
   <packaging>war</packaging>
 
   <name>ecommerce</name>
+         
   <description>E-commerce Backend for Deployment</description>
 
   <properties>
