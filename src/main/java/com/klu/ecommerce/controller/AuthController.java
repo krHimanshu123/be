@@ -17,6 +17,7 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<String> registerUser(@RequestBody Map<String, String> request) {
+        
         String username = request.get("username");
         String email = request.get("email");
         String password = request.get("password");
