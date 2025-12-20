@@ -16,6 +16,7 @@ public class JwtUtil {
     }
 
     public String generateToken(String username) {
+        
         return Jwts.builder()
                 .setSubject(username)
                 .setIssuedAt(new Date())
