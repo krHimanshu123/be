@@ -32,6 +32,7 @@ public class UserService {
     }
 
     public String loginUser(String username, String password) {
+        
         Optional<User> userOptional = userRepository.findByUsername(username);
         if (userOptional.isEmpty() || !passwordEncoder.matches(password, userOptional.get().getPassword())) {
             throw new RuntimeException("Invalid username or password");
