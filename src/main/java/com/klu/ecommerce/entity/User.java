@@ -51,6 +51,7 @@ public class User {
 		this.password = password;
 	}
 
+	
 	public User(Long id, String username, String email, String password) {
 		super();
 		this.id = id;
